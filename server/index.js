@@ -11,6 +11,9 @@ app.use(morgan("dev"));
 
 import textRoutes from "./routes/text.js"; 
 app.use("/api/text", textRoutes);   
+import imageRoutes from "./routes/image.js";
+app.use("/api/image", imageRoutes);
+
 const PORT= process.env.PORT ;
 
 app.get("/", (req, res) => {
@@ -18,6 +21,6 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`✅ Backend running at http://localhost:${PORT}`);
+    console.log(`Backend running at http://localhost:${PORT}`);
   });
   

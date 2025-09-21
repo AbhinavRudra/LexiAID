@@ -3,12 +3,9 @@ Pillow
 pytesseract
 pdfplumber
 pdf2image
-asyncio
 aiohttp
-urllib
 nltk
 transformers
 torch
 gtts
-base64
-dotenv
+python-dotenv

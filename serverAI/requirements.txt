@@ -1,0 +1,16 @@
+flask
+Pillow
+pytesseract
+pdfplumber
+pdf2image
+json
+time
+asyncio
+aiohttp
+urllib
+nltk
+transformers
+torch
+gtts
+base64
+dotenv

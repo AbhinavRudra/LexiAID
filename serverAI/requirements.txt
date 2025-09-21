@@ -3,7 +3,6 @@ Pillow
 pytesseract
 pdfplumber
 pdf2image
-json
 time
 asyncio
 aiohttp

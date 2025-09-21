@@ -9,10 +9,10 @@ app.use(cors());
 app.use(json());
 app.use(morgan("dev"));
 
-//import textRoutes from "./routes/text.js"; 
-//app.use("/api/text", textRoutes);   
-//import imageRoutes from "./routes/image.js";
-//app.use("/api/image", imageRoutes);
+import textRoutes from "./routes/text.js"; 
+app.use("/api/text", textRoutes);   
+import imageRoutes from "./routes/image.js";
+app.use("/api/image", imageRoutes);
 import pdfRoutes from "./routes/pdf.js";
 app.use("/api/pdf", pdfRoutes);
 

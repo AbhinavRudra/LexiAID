@@ -20,7 +20,7 @@ from dotenv import load_dotenv
 
 app = Flask(__name__)
 load_dotenv()
-PORT = os.getenv('PORT')
+
 # Initialize Phi-2 model for text rephrasing
 try:
     print("[INFO] Loading Phi-2 model for text rephrasing...")
@@ -380,5 +380,6 @@ def simplify_pdf():
         "audio": audio_result
     })
 if __name__ == "__main__":
-    app.run(debug=True,port=PORT) 
+    port = int(os.environ.get("PORT", 8000))
+    app.run(debug=True,port=port) 
  
